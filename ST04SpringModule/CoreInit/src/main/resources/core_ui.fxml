@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity"
+         minHeight="-Infinity" minWidth="-Infinity"
+         prefHeight="600.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="dk.sdu.mmmi.coreinit.controllers.CoreController">
+  <tabs>
+      <Tab text="Monitor">
+        <content>
+          <fx:include fx:id="monitorPage" source="monitor_ui.fxml" />
+        </content>
+      </Tab>
+    <Tab text="Create new production sequence">
+      <content>
+        <fx:include fx:id="createProductionPage" source="createProduction_ui.fxml" />
+      </content>
+    </Tab>
+      <Tab text="Production history">
+        <content>
+          <fx:include fx:id="productionHistoryPage" source="productionHistory_ui.fxml" />
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

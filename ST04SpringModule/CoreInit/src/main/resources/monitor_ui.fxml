@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.sdu.mmmi.coreinit.controllers.MonitorController">
+        <children>
+            <Label layoutX="20.0" layoutY="22.0" text="Asset overview">
+                <font>
+                    <Font name="System Bold" size="22.0" />
+                </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="286.0" text="Production overview">
+                <font>
+                    <Font name="System Bold" size="22.0" />
+                </font>
+            </Label>
+            <HBox layoutX="20.0" layoutY="54.0" prefHeight="226.0" prefWidth="858.0">
+                <children>
+                    <Pane prefHeight="200.0" prefWidth="286.0">
+                        <children>
+                            <Label fx:id="asset_warehouse_lbl" layoutX="113.0" layoutY="6.0" text="Warehouse">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="13.0" layoutY="23.0" text="State:" />
+                            <Label fx:id="warehouse_state_lbl" layoutX="113.0" layoutY="23.0" text="Label" />
+                            <ListView fx:id="warehouse_inventory_lst" layoutX="13.0" layoutY="77.0" prefHeight="133.0" prefWidth="260.0" />
+                            <Label layoutX="13.0" layoutY="57.0" text="Inventory:" />
+                            <Label layoutX="13.0" layoutY="40.0" text="Timestamp:" />
+                            <Label fx:id="warehouse_ts_lbl" layoutX="112.0" layoutY="40.0" text="Label" />
+                        </children>
+                    </Pane>
+                    <Pane prefHeight="200.0" prefWidth="286.0">
+                        <children>
+                            <Label fx:id="agv_asset_lbl" layoutX="113.0" layoutY="6.0" text="AGV">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="13.0" layoutY="23.0" text="State:" />
+                            <Label fx:id="agv_state_lbl" layoutX="112.0" layoutY="23.0" text="Label" />
+                            <Label layoutX="13.0" layoutY="57.0" text="Program name:" />
+                            <Label layoutX="13.0" layoutY="40.0" text="Timestamp:" />
+                            <Label fx:id="agv_ts_lbl" layoutX="112.0" layoutY="40.0" text="Label" />
+                            <Label fx:id="agv_program_lbl" layoutX="112.0" layoutY="57.0" text="Label" />
+                            <Label layoutX="13.0" layoutY="74.0" text="Battery:" />
+                            <Label fx:id="agv_battery_lbl" layoutX="112.0" layoutY="74.0" text="Label" />
+                        </children>
+                    </Pane>
+                    <Pane prefHeight="200.0" prefWidth="286.0">
+                        <children>
+                            <Label fx:id="asset_assembly_station_lbl" layoutX="94.0" layoutY="6.0" text="Assembly Station">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="13.0" layoutY="23.0" text="State:" />
+                            <Label fx:id="as_state_lbl" layoutX="112.0" layoutY="23.0" text="Label" />
+                            <Label layoutX="13.0" layoutY="57.0" text="Last operation:" />
+                            <Label layoutX="13.0" layoutY="40.0" text="Timestamp:" />
+                            <Label fx:id="as_ts_lbl" layoutX="112.0" layoutY="40.0" text="Label" />
+                            <Label fx:id="as_last_op_lbl" layoutX="112.0" layoutY="57.0" text="Label" />
+                            <Label layoutX="13.0" layoutY="74.0" text="Current operation:" />
+                            <Label fx:id="as_curr_op_lbl" layoutX="112.0" layoutY="74.0" text="Label" />
+                        </children>
+                    </Pane>
+                </children>
+            </HBox>
+            <HBox layoutX="21.0" layoutY="318.0" prefHeight="226.0" prefWidth="858.0">
+                <children>
+                    <Pane prefHeight="200.0" prefWidth="429.0">
+                        <children>
+                            <Label layoutX="193.0" layoutY="6.0" text="Queue:">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Label>
+                            <ListView fx:id="q_lst" layoutX="13.0" layoutY="23.0" onKeyPressed="#showProductionSequence" onMousePressed="#showProductionSequence" onTouchPressed="#showProductionSequence" prefHeight="182.0" prefWidth="400.0" />
+                  <Button layoutX="114.0" layoutY="214.0" mnemonicParsing="false" onAction="#startProduction" prefHeight="25.0" prefWidth="163.0" text="Start selected production" />
+                  <Button layoutX="293.0" layoutY="214.0" mnemonicParsing="false" onAction="#removeProductionFromQueue" prefHeight="25.0" prefWidth="122.0" text="Remove production" />
+                        </children>
+                    </Pane>
+                    <Pane prefHeight="200.0" prefWidth="429.0">
+                        <children>
+                            <Label layoutX="154.0" layoutY="6.0" text="Operation sequence:">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Label>
+                            <ListView fx:id="ps_lst" layoutX="8.0" layoutY="23.0" prefHeight="182.0" prefWidth="400.0" />
+                        </children>
+                    </Pane>
+                </children>
+            </HBox>
+      <Button layoutX="31.0" layoutY="532.0" mnemonicParsing="false" onAction="#startQueue" prefHeight="25.0" prefWidth="87.0" text="Start queue" />
+        </children>
+</AnchorPane>

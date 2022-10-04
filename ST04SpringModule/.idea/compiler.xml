@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AGV" />
+        <module name="ProductionManager" />
+        <module name="CommonPersistence" />
+        <module name="Persistence" />
+        <module name="Warehouse" />
+        <module name="CoreInit" />
+        <module name="CommonWarehouse" />
+        <module name="AssemblyStation" />
+        <module name="CommonAGV" />
+        <module name="CommonAssemblyStation" />
+        <module name="CommonProductionManager" />
+        <module name="Common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AGV" target="16" />
+      <module name="AssemblyStation" target="16" />
+      <module name="Common" target="16" />
+      <module name="CommonAGV" target="16" />
+      <module name="CommonAssemblyStation" target="16" />
+      <module name="CommonPersistence" target="16" />
+      <module name="CommonProductionManager" target="16" />
+      <module name="CommonWarehouse" target="16" />
+      <module name="CoreInit" target="11" />
+      <module name="Persistence" target="16" />
+      <module name="ProductionManager" target="16" />
+      <module name="ST04SpringModule" target="16" />
+      <module name="Warehouse" target="16" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CoreInit" options="-parameters" />
+    </option>
+  </component>
+</project>

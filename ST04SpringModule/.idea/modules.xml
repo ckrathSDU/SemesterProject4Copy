@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AGV/AGV.iml" filepath="$PROJECT_DIR$/AGV/AGV.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AssemblyStation/AssemblyStation.iml" filepath="$PROJECT_DIR$/AssemblyStation/AssemblyStation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Common/Common.iml" filepath="$PROJECT_DIR$/Common/Common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonAGV/CommonAGV.iml" filepath="$PROJECT_DIR$/CommonAGV/CommonAGV.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonAssemblyStation/CommonAssemblyStation.iml" filepath="$PROJECT_DIR$/CommonAssemblyStation/CommonAssemblyStation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonPersistence/CommonPersistence.iml" filepath="$PROJECT_DIR$/CommonPersistence/CommonPersistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonProductionManager/CommonProductionManager.iml" filepath="$PROJECT_DIR$/CommonProductionManager/CommonProductionManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonWarehouse/CommonWarehouse.iml" filepath="$PROJECT_DIR$/CommonWarehouse/CommonWarehouse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoreInit/CoreInit.iml" filepath="$PROJECT_DIR$/CoreInit/CoreInit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Persistence/Persistence.iml" filepath="$PROJECT_DIR$/Persistence/Persistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProductionManager/ProductionManager.iml" filepath="$PROJECT_DIR$/ProductionManager/ProductionManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ST04SpringModule.iml" filepath="$PROJECT_DIR$/ST04SpringModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Warehouse/Warehouse.iml" filepath="$PROJECT_DIR$/Warehouse/Warehouse.iml" />
+    </modules>
+  </component>
+</project>
